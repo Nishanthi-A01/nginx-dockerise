@@ -17,8 +17,6 @@ COPY index.html $APP_HOME
 
 COPY ./nginx.conf /opt/homebrew/etc/nginx/nginx.conf
 
-RUN chown -R nisha:nginx $APP_HOME
-
 
 EXPOSE 3000
 
