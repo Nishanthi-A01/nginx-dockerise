@@ -1,6 +1,5 @@
 FROM nginx:1.19-alpine
 
-RUN addgroup nginx && addgroup nginx nginx
 USER nginx
 
 ENV NGINX_VERSION=1.19.10 \
