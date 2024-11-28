@@ -5,6 +5,7 @@ RUN apk add doas; \
     adduser -S nisha -G nginx; \
     echo 'nisha:123' | chpasswd; \
     echo 'permit nopass :nginx as root' > /etc/doas.conf
+USER nisha   
 
 
 ENV NGINX_VERSION=1.19.10 \
@@ -21,7 +22,7 @@ RUN chown -R nisha:nginx $APP_HOME
 
 
 EXPOSE 3000
-USER nisha
+
 
 CMD ["nginx", "-g", "daemon off;"]
 
