@@ -1,6 +1,5 @@
 FROM nginx:1.19-alpine
 
-RUN adduser -D nginx
 RUN addgroup nginx && addgroup nginx nginx
 USER nginx
 
