@@ -1,2 +1,2 @@
-# nginx-dockerise
-to dockerise nginx image 
+# nginx-deployment
+to perform the nginx deployment in docker file
