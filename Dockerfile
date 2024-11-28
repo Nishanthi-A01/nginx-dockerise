@@ -8,8 +8,6 @@ COPY images ./images
 COPY package.json .
 COPY ./nginx.conf /opt/homebrew/etc/nginx/nginx.conf
 
-RUN npm install
-
 
 
 EXPOSE 3000
