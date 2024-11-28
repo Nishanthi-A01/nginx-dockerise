@@ -1,18 +1,15 @@
 FROM nginx:1.19-alpine
 
-RUN apk add doas; \
-     adduser  nisha -G nisha; \
-     echo 'nisha:123' | chpasswd; \
-     echo 'permit :nisha as root' > /etc/doas.d/doas.conf
+RUN addgroup -S nisha && adduser -S nginx -G nginx
 
 
-USER nginx
+USER nisha
 
 ENV NGINX_VERSION=1.19.10 \
     PKG_RELEASE=1 \
     APP_HOME=/usr/share/nginx/html
 
-RUN chown -R nginx:nginx $APP_HOME
+RUN chown -R nisha:nginx $APP_HOME
 
 COPY index.html $APP_HOME/
 COPY images ./images
