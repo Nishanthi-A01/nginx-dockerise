@@ -1,9 +1,9 @@
 FROM nginx:1.19-alpine
 
 RUN apk add doas; \
-     adduser  nginx -G nginx; \
-     echo 'nginx:123' | chpasswd; \
-     echo 'permit :nginx as root' > /etc/doas.d/doas.conf
+     adduser  nisha -G nisha; \
+     echo 'nisha:123' | chpasswd; \
+     echo 'permit :nisha as root' > /etc/doas.d/doas.conf
 
 
 USER nginx
