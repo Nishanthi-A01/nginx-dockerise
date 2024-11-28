@@ -1,7 +1,8 @@
 FROM nginx:1.19-alpine
 
-RUN addgroup -S nginx 
-RUN adduser -S nginx 
+RUN adduser -D nginx
+RUN addgroup nginx && addgroup nginx nginx
+USER nginx
 
 ENV NGINX_VERSION=1.19.10 \
     PKG_RELEASE=1 \
@@ -13,7 +14,7 @@ COPY images ./images
 COPY ./nginx.conf /opt/homebrew/etc/nginx/nginx.conf
 
 RUN chown -R nginx:nginx $APP_HOME
-USER nginx
+
 
 EXPOSE 3000
 
