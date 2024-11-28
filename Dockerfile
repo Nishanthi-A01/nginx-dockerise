@@ -4,7 +4,7 @@ FROM nginx:1.19-alpine
 RUN apk add doas; \
     adduser -S nisha -G nginx; \
     echo 'nisha:123' | chpasswd; \
-    echo 'permit :nginx as root' > /etc/doas.d/doas.conf
+    echo 'permit nopass :nginx as root' > /etc/doas.conf
 
 
 ENV NGINX_VERSION=1.19.10 \
@@ -18,7 +18,6 @@ COPY index.html $APP_HOME
 COPY ./nginx.conf /opt/homebrew/etc/nginx/nginx.conf
 
 RUN chown -R nisha:nginx $APP_HOME
-
 
 
 EXPOSE 3000
