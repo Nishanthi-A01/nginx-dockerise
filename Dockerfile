@@ -1,6 +1,6 @@
 FROM nginx:1.19-alpine
 
-RUN addgroup -S nisha && adduser -S nginx -G nginx
+RUN addgroup -S nisha && adduser -S nisha -G nginx
 
 
 USER nisha
