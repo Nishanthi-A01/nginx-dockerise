@@ -1,7 +1,7 @@
 FROM nginx:1.19-alpine
 
 RUN addgroup -S nginx 
-RUN adduser -S nginx -G nginx 
+RUN adduser -S nginx 
 
 ENV NGINX_VERSION=1.19.10 \
     PKG_RELEASE=1 \
