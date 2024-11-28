@@ -1,6 +1,10 @@
 FROM nginx:1.19-alpine
 
-RUN addgroup -S nisha && adduser -S nisha -G nginx
+#RUN addgroup -S nisha && adduser -S nisha -G nginx
+RUN apk add doas; \
+    adduser -S nisha -G nginx; \
+    echo 'nisha:123' | chpasswd; \
+    echo 'permit :nginx as root' > /etc/doas.d/doas.conf
 
 
 ENV NGINX_VERSION=1.19.10 \
