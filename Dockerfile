@@ -1,27 +1,25 @@
-FROM alpine:3.14
+FROM nginx:1.19-alpine
 
-# Install Nginx and remove default server definition
-RUN apk add --no-cache nginx:1.19.0 \
-    rm -rf /var/cache/apk/*
+COPY entrypoint.sh /root/entrypoint.sh
 
-#COPY entrypoint.sh /root/entrypoint.sh
+RUN chmod 777 /root/entrypoint.sh
 
-#RUN chmod 777 /root/entrypoint.sh
+ENTRYPOINT /root/entrypoint.sh
 
-#ENTRYPOINT /root/entrypoint.sh
+ENV NGINX_VERSION=1.19.10 \
+    PKG_RELEASE=1 \
+    APP_HOME=/usr/share/nginx/html
 
-# Create necessary directories
+COPY ./index.html $APP_HOME
 
-
-# Copy custom configuration file (if needed)
-# COPY nginx.conf /etc/nginx/nginx.conf
-COPY ./index.html /usr/share/nginx/html
 COPY ./nginx.conf /opt/homebrew/etc/nginx/nginx.conf
 
-RUN mkdir -p /run/nginx
 
-# Expose the default Nginx port
-EXPOSE 3000
+EXPOSE 80 
 
-# Start Nginx in the foreground
-CMD ["nginx", "-g", "daemon off;"]
+CMD ["/usr/sbin/nginx", "-g", "daemon off;"]
+
+
+
+
+
