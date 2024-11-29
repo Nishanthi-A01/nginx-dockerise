@@ -1,7 +1,7 @@
 FROM alpine:3.14
 
 # Install Nginx and remove default server definition
-RUN apk add --no-cache nginx=1.19.10-r1 && \
+RUN apk add --no-cache nginx=1.19.10-r1 \
     rm -rf /var/cache/apk/*
 
 COPY entrypoint.sh /root/entrypoint.sh
