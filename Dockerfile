@@ -15,7 +15,7 @@ COPY ./index.html $APP_HOME
 COPY ./nginx.conf /opt/homebrew/etc/nginx/nginx.conf
 
 
-EXPOSE 3000
+EXPOSE 80 
 
 CMD ["nginx", "-g", "daemon off;"]
 
