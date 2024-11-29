@@ -1,10 +1,10 @@
 FROM nginx:1.19-alpine
 
-COPY entrypoint.sh /root/entrypoint.sh
+#COPY entrypoint.sh /root/entrypoint.sh
 
-RUN chmod 777 /root/entrypoint.sh
+#RUN chmod 777 /root/entrypoint.sh
 
-ENTRYPOINT /root/entrypoint.sh
+#ENTRYPOINT /root/entrypoint.sh
 
 ENV NGINX_VERSION=1.19.10 \
     PKG_RELEASE=1 \
