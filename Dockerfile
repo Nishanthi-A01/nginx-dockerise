@@ -11,15 +11,15 @@ RUN apk add --no-cache nginx=1.19.10-r1 \
 #ENTRYPOINT /root/entrypoint.sh
 
 # Create necessary directories
-RUN mkdir -p /run/nginx
+
 
 # Copy custom configuration file (if needed)
 # COPY nginx.conf /etc/nginx/nginx.conf
-
+COPY ./index.html /usr/share/nginx/html
 COPY ./nginx.conf /opt/homebrew/etc/nginx/nginx.conf
 
 # Expose the default Nginx port
-EXPOSE 80
+EXPOSE 3000
 
 # Start Nginx in the foreground
 CMD ["nginx", "-g", "daemon off;"]
