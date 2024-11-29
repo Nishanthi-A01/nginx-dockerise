@@ -18,6 +18,8 @@ RUN apk add --no-cache nginx=1.19.10-r1 \
 COPY ./index.html /usr/share/nginx/html
 COPY ./nginx.conf /opt/homebrew/etc/nginx/nginx.conf
 
+RUN mkdir -p /run/nginx
+
 # Expose the default Nginx port
 EXPOSE 3000
 
