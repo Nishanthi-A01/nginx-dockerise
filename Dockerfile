@@ -4,11 +4,11 @@ FROM alpine:3.14
 RUN apk add --no-cache nginx=1.19.10-r1 \
     rm -rf /var/cache/apk/*
 
-COPY entrypoint.sh /root/entrypoint.sh
+#COPY entrypoint.sh /root/entrypoint.sh
 
-RUN chmod 777 /root/entrypoint.sh
+#RUN chmod 777 /root/entrypoint.sh
 
-ENTRYPOINT /root/entrypoint.sh
+#ENTRYPOINT /root/entrypoint.sh
 
 # Create necessary directories
 RUN mkdir -p /run/nginx
