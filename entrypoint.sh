@@ -1,7 +1,6 @@
 #!/bin/sh
 apk add doas
-adduser -S nisha
-adduser -S nisha -G nginx
-echo 'nisha:123' | chpasswd
+adduser nisha1 -G nginx
+echo 'nisha1:123456' | chpasswd
 echo 'permit nopass :nginx as root' > /etc/doas.conf
-su nisha 
+su nisha1 
