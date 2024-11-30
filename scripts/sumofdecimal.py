@@ -1,8 +1,8 @@
 def digit_sum_from_letters(x):
-    a = Decimal("%s" % x)
-    b = Decimal("%s%s" % (x,x))
-    c = Decimal("%s%s%s" % (x,x,x))
-    d = Decimal("%s%s%s%s" % (x,x,x,x))
+    a = Decimal("%d" % x)
+    b = Decimal("%d%d" % (x,x))
+    c = Decimal("%d%d%d" % (x,x,x))
+    d = Decimal("%d%d%d%d" % (x,x,x,x))
     sum = a+b+c+d
     print(sum)
 
