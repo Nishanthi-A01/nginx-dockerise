@@ -7,7 +7,8 @@ def fibonacciseq(target):
     num2 = 1
     next_number = num2  
     count = 1
-    list = [0,1]
+    list = []
+    list = list.append[0,1]
 
     while count <= target:
         print(next_number, end=" ")
@@ -22,7 +23,7 @@ print(list)
 print(type(list))
 
 target = 100 
-list=fibonacciseq(target)
+list = fibonacciseq(target)
 #length = len(list)
 
 def sumEven(list,target):
