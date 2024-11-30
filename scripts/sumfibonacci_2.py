@@ -38,13 +38,14 @@ def sumEven(arr,target):
         if arr[i] % 2 == 0:
             sum = sum + arr[i]
     print(sum)
+    return sum
  
  
 if __name__ == "__main__":
     target = 100 
     arr = fibonacciseq(target)
     print(type(arr))
-    sum = sumEven(arr,target)
-    print(sum)
+    sumofevennum = sumEven(arr,target)
+    print(sumofevennum))
    
    
