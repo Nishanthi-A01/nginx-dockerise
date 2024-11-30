@@ -1,3 +1,6 @@
+# This script calculates the sum of 100 even fibonacci numbers 
+
+
 def evenFibSum(limit) :
     
     

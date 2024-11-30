@@ -1,0 +1,62 @@
+Name:             nginx-deployment-0
+Namespace:        default
+Priority:         0
+Service Account:  default
+Node:             minikube/192.168.49.2
+Start Time:       Sat, 30 Nov 2024 23:55:55 +0530
+Labels:           app=nginx-app
+                  apps.kubernetes.io/pod-index=0
+                  controller-revision-hash=nginx-deployment-5ff69dbfcf
+                  statefulset.kubernetes.io/pod-name=nginx-deployment-0
+Annotations:      <none>
+Status:           Running
+IP:               10.244.0.26
+IPs:
+  IP:           10.244.0.26
+Controlled By:  StatefulSet/nginx-deployment
+Containers:
+  nginx-app:
+    Container ID:   docker://e06cc4813948eb9c4feca6b31242082c0526818a81fa7e5354b63d5e3abfa909
+    Image:          bnishanthi/nginx-deployment:1.0
+    Image ID:       docker-pullable://bnishanthi/nginx-deployment@sha256:7c8215422d6c10d58bd819d6535005e71b945ed144e943cc7ba8f242de3c6b11
+    Port:           3001/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Sat, 30 Nov 2024 23:55:55 +0530
+    Ready:          True
+    Restart Count:  0
+    Environment:
+      NGINX_USER:  admin
+      NGINX_PASS:  password
+    Mounts:
+      /usr/share/nginx/html from csivolume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-5zr59 (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  csivolume:
+    Type:       PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:  csivolume-nginx-deployment-0
+    ReadOnly:   false
+  kube-api-access-5zr59:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  30s   default-scheduler  Successfully assigned default/nginx-deployment-0 to minikube
+  Normal  Pulled     30s   kubelet            Container image "bnishanthi/nginx-deployment:1.0" already present on machine
+  Normal  Created    30s   kubelet            Created container nginx-app
+  Normal  Started    30s   kubelet            Started container nginx-app
