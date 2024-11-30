@@ -19,10 +19,9 @@ def fibonacciseq(target):
 #print("The list of fibonacci sequence:")  
 
 print(list)
-return(list)
 
 target = 100 
-fibonacciseq(target)
+list=fibonacciseq(target)
 
 def sumEven(list,n):
  
@@ -40,11 +39,10 @@ def sumEven(list,n):
         if list[i] % 2 == 0:
             sum = sum + list[i]
     print(sum)
-
-return(sum)
  
  
 # Driver code
 n = len(list)
  
-sumEven(list,n)
+sum = sumEven(list,n)
+print(sum)
