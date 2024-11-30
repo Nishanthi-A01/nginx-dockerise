@@ -8,14 +8,14 @@ def fibonacciseq(target):
     next_number = num2  
     count = 1
     list = []
-    list.insert(num1,num2)
+    list.append(num1,num2)
 
     while count <= target:
         print(next_number, end=" ")
         count += 1
         num1, num2 = num2, next_number
         next_number = num1 + num2
-        list.insert(${next_number})
+        list.append(next_number)
         print(" the list of first ${target} fibonacci dequence: ${list}")       
     return list 
 
