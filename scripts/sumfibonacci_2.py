@@ -18,6 +18,7 @@ def fibonacciseq(target):
         x.append(next_number)
     print(x)
     print(type(x))
+    print(list[5])
 
 
 
@@ -29,11 +30,9 @@ def sumEven(arr,target):
      
     # initializing sum 0
     sum = 0
-     
-    # Traverse the freq and print all
-    # sum all elements with even frequency 
-    # multiplied by its frequency
-    for i in range(0,target):
+    i=0
+
+    for i in range(target):
         if arr[i] % 2 == 0:
             sum = sum + arr[i]
     print(sum)
@@ -42,6 +41,7 @@ def sumEven(arr,target):
 if __name__ == "__main__":
     target = 100 
     arr = fibonacciseq(target)
+    arr.sort()
     sum = sumEven(arr,target)
     print(sum)
    
