@@ -7,8 +7,7 @@ def fibonacciseq(target):
     num2 = 1
     next_number = num2  
     count = 1
-    list = []
-    list.append(num1,num2)
+    list = [0,1]
 
     while count <= target:
         print(next_number, end=" ")
@@ -21,4 +20,25 @@ def fibonacciseq(target):
 
 
 
-sum([i for i in fibonacciseq(100) if i%2 ==0])
+def sumEven(arr):
+ 
+    # Counting frequency of every 
+    # element using Counter
+    freq = Counter(arr)
+     
+    # initializing sum 0
+    sum = 0
+     
+    # Traverse the freq and print all
+    # sum all elements with even frequency 
+    # multiplied by its frequency
+    for it in freq:
+        if freq[it] % 2 == 0:
+            sum = sum + freq[it]
+    print(sum)
+ 
+ 
+# Driver code
+n = len(list)
+ 
+sumEven(list, n)
