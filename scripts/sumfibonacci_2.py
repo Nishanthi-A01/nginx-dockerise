@@ -19,19 +19,16 @@ def fibonacciseq(target):
 #print("The list of fibonacci sequence:")  
 
 print(list)
+return(list)
 
 target = 100 
 fibonacciseq(target)
-     
 
-
-
-"""
-def sumEven(arr,n):
+def sumEven(list,n):
  
     # Counting frequency of every 
     # element using Counter
-    freq = Counter(arr)
+    freq = Counter(list)
      
     # initializing sum 0
     sum = 0
@@ -39,14 +36,15 @@ def sumEven(arr,n):
     # Traverse the freq and print all
     # sum all elements with even frequency 
     # multiplied by its frequency
-    for it in freq:
-        if freq[it] % 2 == 0:
-            sum = sum + freq[it]
+    for i in freq:
+        if list[i] % 2 == 0:
+            sum = sum + list[i]
     print(sum)
+
+return(sum)
  
  
 # Driver code
 n = len(list)
  
-sumEven(list, n)
-"""
+sumEven(list,n)
