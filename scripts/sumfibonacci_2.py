@@ -46,6 +46,6 @@ if __name__ == "__main__":
     arr = fibonacciseq(target)
     print(type(arr))
     sumofevennum = sumEven(arr,target)
-    print(sumofevennum))
+    print(sumofevennum)
    
    
