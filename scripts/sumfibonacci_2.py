@@ -18,7 +18,7 @@ def fibonacciseq(target):
         x.append(next_number)
     print(x)
     print(type(x))
-    print(list[5])
+    print(x[5])
 
 
 
