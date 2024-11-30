@@ -29,7 +29,6 @@ def sumEven(list,target):
  
     # Counting frequency of every 
     # element using Counter
-    freq = Counter(list)
      
     # initializing sum 0
     sum = 0
@@ -37,7 +36,7 @@ def sumEven(list,target):
     # Traverse the freq and print all
     # sum all elements with even frequency 
     # multiplied by its frequency
-    for i in freq:
+    for i in list:
         if list[i] % 2 == 0:
             sum = sum + list[i]
     print(sum)
