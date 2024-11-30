@@ -17,11 +17,11 @@ def fibonacciseq(target):
         num1, num2 = num2, next_number
         next_number = num1 + num2
         x.append(next_number)
-    print(x)
-return(x)
+print(x)
+
 
 target = 100 
-array = fibonacciseq(target)
+x = fibonacciseq(target)
 #length = len(list)
 
 def sumEven(x,target):
