@@ -20,13 +20,13 @@ echo Testing sed command with the input file:
 
 
 echo replacing docker with dockerhub using sed 
-sed -e' s/docker /dockerhub/g' input.txt > inputmodified.txt
+sed -e' s/docker/dockerhub/g' input.txt > inputmodified.txt
 
 echo Adding text before the line 4 
 
-sed '4 i #This is the extra line' ./input.txt
+sed '4 i #This is the extra line' input.txt
 echo adding text after the line 4 
-sed '5 a #This is the extra line' ./input.txt
+sed '5 a #This is the extra line' input.txt
 
 echo Testing awk commnd with the input file 
 
