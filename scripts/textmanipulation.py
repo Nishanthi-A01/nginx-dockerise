@@ -16,13 +16,6 @@ list2 = []
 list3 = []
 
 
-'''for list in mylines:
-  string = list
-  list3.append(string.replace("=",","))
-  if list == "":
-    break
-
-print(list3)'''
 #chopping off the key and values from the list
 for list in mylines:
   up_to_word = "="
@@ -38,27 +31,9 @@ input2 = input("primary or backup Adapter:")
 
 #print(list2) 
 
-'''def convert(list3):
-    res_dict = {}
-    for i in range(0, len(list3), 2):
-        res_dict[list3[i]] = list3[i + 1]
-    return res_dict
-print(convert(list3))
-
-
-df=pd.read_csv('license_old.txt')
-print(df)'''
 
 #defining the Key values in separate list
 list4 = [ 'Signature','Hostname','NumPlaces','CmeAppName','ExpiryDate','ExpiryTimestamp','WfmVendor','Customer' ]
-
-'''def addyears(d,years):
-  try:
-      return d.replace(year=d.year + years)
-  except ValueError:
-      return d + (date(d.year + years, 1, 1) - date(d.year,1,1))
-expiry_year = addyears(datetime.date(input4),1)
-print(expiry_year)'''
 
 #print(datetime.date.today().year + 1)
 
