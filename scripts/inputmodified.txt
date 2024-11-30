@@ -16,9 +16,9 @@ IPs:
 Controlled By:  StatefulSet/nginx-deployment
 Containers:
   nginx-app:
-    Container ID:   docker://e06cc4813948eb9c4feca6b31242082c0526818a81fa7e5354b63d5e3abfa909
+    Container ID:   dockerhub://e06cc4813948eb9c4feca6b31242082c0526818a81fa7e5354b63d5e3abfa909
     Image:          bnishanthi/nginx-deployment:1.0
-    Image ID:       docker-pullable://bnishanthi/nginx-deployment@sha256:7c8215422d6c10d58bd819d6535005e71b945ed144e943cc7ba8f242de3c6b11
+    Image ID:       dockerhub-pullable://bnishanthi/nginx-deployment@sha256:7c8215422d6c10d58bd819d6535005e71b945ed144e943cc7ba8f242de3c6b11
     Port:           3001/TCP
     Host Port:      0/TCP
     State:          Running

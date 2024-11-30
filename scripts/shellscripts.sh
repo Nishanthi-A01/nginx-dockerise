@@ -24,9 +24,9 @@ sed -e' s/docker/dockerhub/g' input.txt > inputmodified.txt
 
 echo Adding text before the line 4 
 
-sed '4 i #This is the extra line' input.txt
+sed '4 i #This is the extra line\i' input.txt
 echo adding text after the line 4 
-sed '5 a #This is the extra line' input.txt
+sed '5 a #This is the extra line\a' input.txt
 
 echo Testing awk commnd with the input file 
 
