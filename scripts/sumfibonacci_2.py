@@ -21,10 +21,10 @@ def fibonacciseq(target):
 
 
 target = 100 
-x = fibonacciseq(target)
+y = fibonacciseq(target)
 #length = len(list)
 
-def sumEven(x,target):
+def sumEven(y,target):
  
     # Counting frequency of every 
     # element using Counter
@@ -37,9 +37,9 @@ def sumEven(x,target):
     # multiplied by its frequency
     for i in range(0,target):
         if x[i]%2 == 0:
-            sum = sum + x[i]
+            sum = sum + y[i]
     print(sum)
  
  
-sum = sumEven(x,target)
+sum = sumEven(y,target)
 print(sum)
