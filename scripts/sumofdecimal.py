@@ -1,7 +1,7 @@
 def digit_sum(x):
-    lst = [str(x)*i for i in range(1,4)]
+    lst = [str(x)*i for i in range(1,5)]
     print ('+'.join(lst))
-    return sum(map(int, lst))
+    return(sum(map(int, lst)))
     print(sum(map(int, lst)))
 
 
