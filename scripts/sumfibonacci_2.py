@@ -23,7 +23,7 @@ print(list)
 target = 100 
 list=fibonacciseq(target)
 
-def sumEven(list,n):
+def sumEven(list,length):
  
     # Counting frequency of every 
     # element using Counter
@@ -42,7 +42,7 @@ def sumEven(list,n):
  
  
 # Driver code
-n = len(list)
+length = len(list)
  
-sum = sumEven(list,n)
+sum = sumEven(list,length)
 print(sum)
