@@ -17,9 +17,7 @@ def fibonacciseq(target):
         num1, num2 = num2, next_number
         next_number = num1 + num2
         x.append(next_number)
-        
-     print("The list of fibonacci sequence:")  
-     print(x)
+    print(x)
 return(x)
 
 target = 100 
