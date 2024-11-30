@@ -20,9 +20,7 @@ def fibonacciseq(target):
     print(x)
 
 
-target = 100 
-y = fibonacciseq(target)
-#length = len(list)
+
 
 def sumEven(y,target):
  
@@ -41,5 +39,12 @@ def sumEven(y,target):
     print(sum)
  
  
-sum = sumEven(y,target)
-print(sum)
+
+
+if __name__ == "__main__":
+    target = 100 
+    y = fibonacciseq(target)
+    sum = sumEven(y,target)
+    print(sum)
+   
+   
