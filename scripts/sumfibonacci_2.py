@@ -15,12 +15,10 @@ def fibonacciseq(target):
         count += 1
         num1, num2 = num2, next_number
         next_number = num1 + num2
-        list.insert(nextnumber)
+        list.insert(${next_number})
         print(" the list of first ${target} fibonacci dequence: ${list}")       
     return list 
 
-print(" the list of first ${target} fibonacci dequence:")
 
-target = 100 
 
 sum([i for i in fibonacciseq(100) if i%2 ==0])
