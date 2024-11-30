@@ -16,7 +16,10 @@ def fibonacciseq(target):
         next_number = num1 + num2
         list.append(next_number)
         
-    print(" the list of first ${target} fibonacci dequence: ${list}")       
+print("the list of first ${target} fibonacci dequence: ${list}")  
+
+target = 100 
+fibonacciseq(target)
      
 
 
