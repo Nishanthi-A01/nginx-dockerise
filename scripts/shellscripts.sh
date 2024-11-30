@@ -1,7 +1,8 @@
 #!/bin/sh
-echo &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+#echo &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 echo Testing the grep command:
-echo &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+#echo &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 
 echo #####greping nginx-deployment in input.txt file ############
 grep "nginx-deployment" ./input.txt
@@ -13,9 +14,9 @@ grep -l -i sum *.py
 echo #####greping file without name sum and .py extension  ############
 grep -L -i sum *.py
 
-echo &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+#echo &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 echo Testing sed command with the input file:
-echo &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+#echo &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 
 
 echo #####replacing docker with dockerhub using sed ############
