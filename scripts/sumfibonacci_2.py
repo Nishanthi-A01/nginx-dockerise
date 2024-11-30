@@ -20,6 +20,7 @@ def fibonacciseq(target):
     print(type(x))
     print(x[5])
     print(len(x))
+    return x
 
 
 
