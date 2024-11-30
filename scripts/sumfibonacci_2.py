@@ -8,6 +8,8 @@ def fibonacciseq(target):
     next_number = num2  
     count = 1
     x = []
+    x.append(num1)
+    x.append(num2)
 
     while count <= target-2:
         count += 1
