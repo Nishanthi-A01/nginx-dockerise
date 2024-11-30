@@ -34,7 +34,7 @@ def sumEven(arr,target):
     # sum all elements with even frequency 
     # multiplied by its frequency
     for i in range(0,target):
-        if arr[i]%2 == 0:
+        if arr[i] % 2 == 0:
             sum = sum + arr[i]
     print(sum)
  
