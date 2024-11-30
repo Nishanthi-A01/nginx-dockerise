@@ -23,4 +23,4 @@ print(" the list of first ${target} fibonacci dequence:")
 
 target = 100 
 
-sum([i for i in fibonacci(target) if i%2 ==0])
+sum([i for i in fibonacciseq(target) if i%2 ==0])
