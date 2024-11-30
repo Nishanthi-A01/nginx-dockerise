@@ -10,7 +10,7 @@ def fibonacciseq(target):
     list = []
     list = list.insert(num1,num2)
 
-    while count <= n:
+    while count <= target:
         print(next_number, end=" ")
         count += 1
         num1, num2 = num2, next_number
