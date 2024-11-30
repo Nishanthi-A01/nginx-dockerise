@@ -37,7 +37,7 @@ def sumEven(arr,target):
     for i in range(target):
         if arr[i] % 2 == 0:
             sum = sum + arr[i]
-    print(sum)
+    #print(sum)
     return sum
  
  
