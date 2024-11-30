@@ -20,7 +20,7 @@ def fibonacciseq(target):
 
 
 
-def sumEven(arr):
+def sumEven(arr,n):
  
     # Counting frequency of every 
     # element using Counter
