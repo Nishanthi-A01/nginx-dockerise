@@ -8,7 +8,7 @@ def sum_n(x, n):
 if __name__ == "__main__":
    decimalnum = input("Enter the decimal number:")
    iterations = input("Enter the number of iterations:")
-   total=sum_n(decimalnum,iterations+1)
+   total=sum_n(decimalnum,iterations)
    print(total)
 
 
