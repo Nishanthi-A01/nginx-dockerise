@@ -9,7 +9,10 @@ def sum_n(x, n):
 if __name__ == "__main__":
    decimalnum = input("Enter the decimal number:")
    iterations = input("Enter the number of iterations:")
-   print(isdecimal(decimalnum))
+   if isdecimal(decimalnum):
+      print("The number entered is valid!")
+   else
+      print("The entered number is invalid")
    total=sum_n(Decimal(decimalnum),int(iterations))
    print(total)
 
