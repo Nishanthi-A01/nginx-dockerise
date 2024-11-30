@@ -15,11 +15,13 @@ def fibonacciseq(target):
         num1, num2 = num2, next_number
         next_number = num1 + num2
         list.append(next_number)
-        print(" the list of first ${target} fibonacci dequence: ${list}")       
-    return list 
+        
+    print(" the list of first ${target} fibonacci dequence: ${list}")       
+     
 
 
 
+"""
 def sumEven(arr,n):
  
     # Counting frequency of every 
@@ -42,3 +44,4 @@ def sumEven(arr,n):
 n = len(list)
  
 sumEven(list, n)
+"""
