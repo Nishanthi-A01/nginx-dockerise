@@ -41,7 +41,6 @@ def sumEven(arr,target):
 if __name__ == "__main__":
     target = 100 
     arr = fibonacciseq(target)
-    arr.sort()
     sum = sumEven(arr,target)
     print(sum)
    
