@@ -4,8 +4,9 @@ def digit_sum_from_letters(x):
     c = int("%s%s%s" % (x,x,x))
     d = int("%s%s%s%s" % (x,x,x,x))
     sum = a+b+c+d
-    return(sum)
     print(sum)
+
+
 if __name__ == "__main__":
    decimalnum = input("Enter the decimal number:")
    digit_sum_from_letters(decimalnum)
