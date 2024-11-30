@@ -1,3 +1,5 @@
+# This script is to verify all the fields of license file for adapters used in project 
+# This script was written by me and hence I am adding it here 
 import re
 import itertools
 import datetime
