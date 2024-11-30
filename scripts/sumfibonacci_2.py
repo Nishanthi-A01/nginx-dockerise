@@ -1,6 +1,6 @@
 #This script calculates the even fibonacci number out of first 100 fibonacci sequence 
 
-def fibonacciseq(target)
+def fibonacciseq(target):
 
     # determine the number of finonacci sequence 
     num1 = 0  # declaring the first two fibonacci number 
