@@ -23,9 +23,9 @@ print(type(list))
 
 target = 100 
 list=fibonacciseq(target)
-length = len(list)
+#length = len(list)
 
-def sumEven(list,length):
+def sumEven(list,target):
  
     # Counting frequency of every 
     # element using Counter
