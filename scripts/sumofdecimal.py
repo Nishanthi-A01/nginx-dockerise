@@ -6,6 +6,6 @@ def digit_sum_from_letters(x):
     return a+b+c+d
     print(a+b+c+d)
 if __name__ == "__main__":
-   decimalnum = input(print"Enter the decimal number:")
+   decimalnum = input("Enter the decimal number:")
    digit_sum_from_letters(decimalnum)
 
