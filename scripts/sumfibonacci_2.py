@@ -1,7 +1,7 @@
 #This script calculates the even fibonacci number out of first 100 fibonacci sequence 
 
 def fibonacciseq(target):
-
+    total = target
     # determine the number of finonacci sequence 
     num1 = 0  # declaring the first two fibonacci number 
     num2 = 1
@@ -16,7 +16,7 @@ def fibonacciseq(target):
         next_number = num1 + num2
         list.append(next_number)
         
-print("The list of first" + target + "fibonacci sequence:")  
+print("The list of first" + total + "fibonacci sequence:")  
 
 target = 100 
 fibonacciseq(target)
