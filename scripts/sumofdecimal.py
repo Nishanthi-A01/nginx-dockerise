@@ -1,12 +1,14 @@
-def digit_sum(x):
-    lst = [str(x)*i for i in range(1,5)]
-    print ('+'.join(lst))
-    return(sum(map(int, lst)))
-    print(sum(map(int, lst)))
+def sum_n(x, n):
+    s = 0
+    for i in range(1,n+1):
+        s += int(('%d'*i) % tuple([x]*i))
+    return s
 
 
 if __name__ == "__main__":
    decimalnum = input("Enter the decimal number:")
-   digit_sum(decimalnum)
+   n= input("Enter the number of iterations:")
+   total=sum_n(decimalnum,n)
+   print(total)
 
 
