@@ -1,0 +1,8 @@
+Signature=HfRRiV91p0flzRaFK7zq7hbhRTHweKQshFBQPmzuYF/jY97WmJvvDMe1a8Ss3KBsuTCBc7CAJh8Q\n4FX4FCT6tj0dfrqfB3mMlqb7B30Ih4ZR7qcycYeqzVtLsvF2kAHg/HjBS56G8j1IBb8OqMEz+wT3\nGr8eSB0QfjfEMXplToY\=
+Hostname=xyz-txyz-aspect1-backup-0
+NumPlaces=25
+CmeAppName=xyz-txyz-aspect1-backup
+ExpiryDate=2025.Jan.31
+ExpiryTimestamp=1706659200000
+WfmVendor=Aspect
+Customer=Amazon
