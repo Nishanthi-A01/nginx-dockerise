@@ -6,7 +6,7 @@ class DigitCalculator:
 
     def validate_input(self):
         # Check if the input is a single digit and between 0 and 9
-        if not isinstance(self.digit, dec) 
+        if not isinstance(self.digit, dec):
             raise ValueError("Input must be a decimal digit .")
 
     def calculate_sum(self):
