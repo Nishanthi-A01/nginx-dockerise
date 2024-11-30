@@ -43,5 +43,5 @@ def sumEven(list,target):
     print(sum)
  
  
-sum = sumEven(list,length)
+sum = sumEven(list,target)
 print(sum)
