@@ -6,9 +6,9 @@ export DB_PASSWORD=Dhhs22kfid9c
 sed -e 's/%NAMESPACE%/staging/' \
     -e 's/%DB_USERNAME%/admin/'          \
     -e 's/%DB_PASSWORD%/secret/'     \
-    ./secret-template.yaml > secret-template-backup.yaml
+    ./secret-template.yaml
 
-'''
+
 file_path="./secret-template.yaml"
 env_var_names=$(env | sed -E -n 's/^([^=]+)(=.*)/\1/p')
 
@@ -26,4 +26,3 @@ for env_var_name in ${env_var_names}; do
         mv "${file_path}.tmp" "${file_path}"
     fi
 done
-'''
