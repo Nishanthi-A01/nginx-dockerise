@@ -26,3 +26,11 @@ for env_var_name in ${env_var_names}; do
         mv "${file_path}.tmp" "${file_path}"
     fi
 done
+
+echo Testing awk commnd with the input file to get the output of specific field 
+
+awk '($2 == "Reason") {print}' ./input.txt
+
+echo removing all the digit fromt the input file using tr 
+
+tr -d [:digit:] << ./input.txt
