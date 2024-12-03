@@ -6,6 +6,8 @@ def interSection(arr1,arr2): # finding common elements
 
 # Driver program
 if __name__ == "__main__":
-   arr1 = ['t','u','t','o','r','i','a','l']
-   arr2 = ['p','o','i','n','t']
+   arr1 = [26,4,56,8,9,10,1]
+   arr1 = sort(arr1)
+   arr2 = [1,56,9,11,8,0]
+   arr2 = sort(arr2)
    interSection(arr1,arr2)
