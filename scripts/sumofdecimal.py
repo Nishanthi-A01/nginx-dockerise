@@ -1,12 +1,12 @@
 import decimal
-
+# function to perform the sum X+XX+XXX
 def sum_n(x, n):
     s = 0
     for i in range(1,n+1):
         s += decimal.Decimal(('%d'*i) % tuple([x]*i))
     return(decimal.Decimal(s))
 
-
+# Getting the input and checing the input is valid 
 if __name__ == "__main__":
    decimalnum = input("Enter the decimal number:")
    iterations = input("Enter the number of iterations:")
