@@ -9,8 +9,8 @@ def sum_n(x, n):
 if __name__ == "__main__":
    decimalnum = input("Enter the decimal number:")
    iterations = input("Enter the number of iterations:")
-   d= decimal.Decimal(decimalnum)
-   e=abs(d.as_tuple().exponent) 
+   d = decimal.Decimal(decimalnum)
+   e = abs(d.as_tuple().exponent) 
    if decimalnum.isdigit() and e >= 0:          
         print("The number entered is valid!")
         total=sum_n(decimal.Decimal(decimalnum),int(iterations))
