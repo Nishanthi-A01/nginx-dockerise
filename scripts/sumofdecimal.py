@@ -10,11 +10,14 @@ if __name__ == "__main__":
    decimalnum = input("Enter the decimal number:")
    iterations = input("Enter the number of iterations:")
    if decimalnum.isdigit():
-      print("The number entered is valid!")
-      total=sum_n(Decimal(decimalnum),int(iterations))
-      print(total)
+      if decimalnum.find(".")           
+         print("The number entered is valid!")
+         total=sum_n(Decimal(decimalnum),int(iterations))
+         print(total)
+      else:
+        print("The entered number is invalid")
    else:
-      print("The entered number is invalid")
+      print ("The entered number is not digit")  
    
 
 
