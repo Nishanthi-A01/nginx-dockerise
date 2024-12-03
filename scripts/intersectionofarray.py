@@ -11,5 +11,5 @@ if __name__ == "__main__":
    print('First array: ',arr1)
    arr2 = [1,56,9,11,8,0]
    arr2.sort()
-   print('Second array:' arr2)
+   print('Second array:' ,arr2)
    interSection(arr1,arr2)
