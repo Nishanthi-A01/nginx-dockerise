@@ -3,7 +3,7 @@ def sum_n(x, n):
     s = 0
     for i in range(1,n+1):
         s += decimal.Decimal(('%d'*i) % tuple([x]*i))
-    return(Decimal(s))
+    return(decimal.Decimal(s))
 
 
 if __name__ == "__main__":
