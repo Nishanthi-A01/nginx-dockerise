@@ -2,7 +2,7 @@ import decimal
 def sum_n(x, n):
     s = 0
     for i in range(1,n+1):
-        s += Decimal(('%d'*i) % tuple([x]*i))
+        s += decimal.Decimal(('%d'*i) % tuple([x]*i))
     return(Decimal(s))
 
 
