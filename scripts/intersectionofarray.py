@@ -4,12 +4,12 @@ def interSection(arr1,arr2): # finding common elements
     values = list(filter(lambda x: x in arr1, arr2))
     print ("Intersection of arr1 & arr2 is: ",values)
 
-# Driver program
+
 if __name__ == "__main__":
    arr1 = [26,4,56,8,9,10,1]
    arr1.sort()
-   print(arr1)
+   print('First array: ',arr1)
    arr2 = [1,56,9,11,8,0]
    arr2.sort()
-   print(arr2)
+   print('Second array:' arr2)
    interSection(arr1,arr2)
