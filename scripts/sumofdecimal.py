@@ -9,16 +9,15 @@ def sum_n(x, n):
 if __name__ == "__main__":
    decimalnum = input("Enter the decimal number:")
    iterations = input("Enter the number of iterations:")
-   if decimalnum.isdigit():
-      if decimalnum.find("."):           
-         print("The number entered is valid!")
-         total=sum_n(decimal.Decimal(decimalnum),int(iterations))
-         print(total)
-      else:
-        print("The entered number is invalid")
-else:
-  print ("The entered number is not digit")  
-   
+   d= decimal.Decimal(decimalnum)
+   e=abs(d.as_tuple().exponent) 
+   if decimalnum.isdigit() && e>=0 :          
+      print("The number entered is valid!")
+      total=sum_n(decimal.Decimal(decimalnum),int(iterations))
+      print(total)
+   else:
+     print("The entered number is invalid")
+
 
     
 mylist=["100","23.0","45.650","56.00","500.70000"]
