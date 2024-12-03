@@ -22,11 +22,18 @@ echo Testing sed command with the input file:
 echo replacing docker with dockerhub using sed 
 sed -e' s/docker/dockerhub/g' input.txt > inputmodified.txt
 
-echo Adding text before the line 4 
+echo replacing the 3th occurence of docker with dockerhub using sed 
+sed -e' s/docker/dockerhub/3' input.txt > inputmodified.txt
 
-sed '4 i #This is the extra line\i' input.txt
-echo adding text after the line 4 
-sed '5 a #This is the extra line\a' input.txt
+echo Printing only the replaced line  
+sed -e' s/docker/dockerhub/p' input.txt 
+
+echo Deleting the particular line from the file 
+sed 5d input.txt
+
+echo Deleting the last line from the file 
+sed $d input.txt
+
 
 echo Testing awk commnd with the input file 
 
