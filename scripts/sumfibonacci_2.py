@@ -16,36 +16,27 @@ def fibonacciseq(target):
         num1, num2 = num2, next_number
         next_number = num1 + num2
         x.append(next_number)
-    print(x)
-    print(type(x))
-    print(x[5])
-    print(len(x))
     return x
 
 
+## function to add all the even number under the target is reached 
 
-
-def sumEven(arr,target):
- 
-    # Counting frequency of every 
-    # element using Counter
-     
+def sumEven(arr,target):  
     # initializing sum 0
     sum = 0
     i=0
 
-    for i in range(target):
-        if arr[i] % 2 == 0:
+    for i in range(target): 
+        if arr[i] % 2 == 0: ## check the condition for even number 
             sum = sum + arr[i]
     #print(sum)
     return sum
  
- 
+ # main function 
 if __name__ == "__main__":
     target = 100 
     arr = fibonacciseq(target)
-    print(type(arr))
     sumofevennum = sumEven(arr,target)
-    print(sumofevennum)
+    print('sum of even fibonacci number out of 100:',sumofevennum)
    
    
