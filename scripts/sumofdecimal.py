@@ -11,7 +11,7 @@ if __name__ == "__main__":
    iterations = input("Enter the number of iterations:")
    if decimalnum.isdigit():
       print("The number entered is valid!")
-      total=sum_n(decimalnum,int(iterations))
+      total=sum_n(Decimal(decimalnum),int(iterations))
       print(total)
    else:
       print("The entered number is invalid")
