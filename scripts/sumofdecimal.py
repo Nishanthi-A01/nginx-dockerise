@@ -11,12 +11,12 @@ if __name__ == "__main__":
    iterations = input("Enter the number of iterations:")
    d= decimal.Decimal(decimalnum)
    e=abs(d.as_tuple().exponent) 
-   if decimalnum.isdigit() and e>=0 :          
-      print("The number entered is valid!")
-      total=sum_n(decimal.Decimal(decimalnum),int(iterations))
-      print(total)
+   if decimalnum.isdigit() and e>=0:          
+        print("The number entered is valid!")
+        total=sum_n(decimal.Decimal(decimalnum),int(iterations))
+        print(total)
    else:
-     print("The entered number is invalid")
+        print("The entered number is invalid")
 
 
     
@@ -27,7 +27,7 @@ for item in mylist:
     d = decimal.Decimal(item)
     e=abs(d.as_tuple().exponent) 
     if e==0:
-        print(f"{item} has no decimal places")
+         print(f"{item} has no decimal places")
     elif e==1:
             print(f"{item} has 1 decimal place")
     elif e==2:
